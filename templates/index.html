@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Info Sistema</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Información del Sistema</h1>
+
+<h2>Último registro</h2>
+<pre id="ultimo">Cargando...</pre>
+
+<h2>Historial</h2>
+<div id="historial">Cargando...</div>
+
+<script>
+fetch('/registros').then(r=>r.json()).then(data=>{
+  if(!data.length){
+    document.getElementById('ultimo').textContent='No hay registros';
+    document.getElementById('historial').textContent='';
+    return;
+  }
+  document.getElementById('ultimo').textContent=JSON.stringify(data[data.length-1],null,2);
+  let t='<table><tr><th>#</th><th>Usuario</th><th>Fecha</th><th>Ruta</th></tr>';
+  [...data].reverse().forEach((r,i)=>t+=`<tr><td>${i+1}</td><td>${r.usuario||'-'}</td><td>${r.fecha_hora||'-'}</td><td>${r.ruta||'-'}</td></tr>`);
+  t+='</table>';
+  document.getElementById('historial').innerHTML=t;
+});
+</script>
+</body>
+</html>
