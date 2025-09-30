@@ -81,5 +81,6 @@ if __name__ == "__main__":
     print("Información recopilada al iniciar el servidor:")
     for k, v in info.items():
         print(f"{k}: {v}")
+if __name__=="__main__":
 
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5001,debug=True)

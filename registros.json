@@ -36,5 +36,26 @@
     "usuario": "devasc",
     "ruta": "/home/devasc/labs/devnet-src/proyecto_web",
     "fecha_hora": "2025-09-30 02:33:12"
+  },
+  {
+    "sistema": "Linux",
+    "version": "#236-Ubuntu SMP Fri Apr 11 19:53:21 UTC 2025",
+    "usuario": "devasc",
+    "ruta": "/home/devasc/labs/devnet-src/proyecto_web",
+    "fecha_hora": "2025-09-30 03:13:14"
+  },
+  {
+    "sistema": "Linux",
+    "version": "#236-Ubuntu SMP Fri Apr 11 19:53:21 UTC 2025",
+    "usuario": "devasc",
+    "ruta": "/home/devasc/labs/devnet-src/proyecto_web",
+    "fecha_hora": "2025-09-30 03:17:43"
+  },
+  {
+    "sistema": "Linux",
+    "version": "#236-Ubuntu SMP Fri Apr 11 19:53:21 UTC 2025",
+    "usuario": "devasc",
+    "ruta": "/home/devasc/labs/devnet-src/proyecto_web",
+    "fecha_hora": "2025-09-30 03:17:44"
   }
 ]

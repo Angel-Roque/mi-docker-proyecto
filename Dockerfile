@@ -10,5 +10,5 @@ RUN pip install --no-cache-dir flask requests
 
 EXPOSE 5000
 
-CMD ["python3"," apli.py"]
+CMD ["python3","apli.py"]
 
